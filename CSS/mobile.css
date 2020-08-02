@@ -297,6 +297,65 @@ li.fade {
   }
 }
 
+/* Wedding wire */
+
+#about .wedding-wire {
+  flex-direction: column;
+  text-align: center;
+}
+
+#about .wedding-wire div {
+  margin-bottom: 2rem;
+}
+
+/* Background Options */
+
+#background-options {
+  padding-top: 2rem;
+  height: 100%;
+}
+
+/* Booth List */
+
+#booth-list .items .item:nth-child(3) img {
+  width: 90%;
+  height: 90%;
+  margin: 0rem;
+}
+
+@media (max-width: 500px) {
+  .nav-links {
+    height: 105vh;
+  }
+
+  #faq-body {
+    height: 97rem;
+  }
+
+  #faq-body .container {
+    height: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar-top {
+    height: 11rem;
+  }
+
+  .nav-links {
+    height: 160vh;
+  }
+
+  .nav-links.open {
+    height: 115vh;
+  }
+
+  #header {
+    height: 86vh;
+    margin-top: 3.75rem;
+  }
+}
+
 /* =========== iphone 6/7 Plus ========== */
 
 @media (max-width: 414px) {
@@ -320,331 +379,299 @@ li.fade {
 
   #header {
     margin-top: 4.5rem;
-    height: 71vh;
+    height: 69vh;
   }
 
-  /* Wedding wire */
+  @media (max-width: 411px) {
+    .nav-links.open {
+      clip-path: circle(950px at 90% 0%);
+      -webkit-clip-path: circle(950px at 90% 0%);
+      z-index: 10;
+    }
 
-  #about .wedding-wire {
+    #about .wedding-wire img {
+      margin-bottom: 0rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #header {
+      height: 63vh;
+    }
+  }
+
+  /* ============= Iphone 6/7/8 =========  */
+
+  @media (max-width: 375px) {
+    .nav-links {
+      height: 114vh;
+    }
+
+    .nav-links.open {
+      clip-path: circle(900px at 90% 0%);
+      -webkit-clip-path: circle(900px at 90% 0%);
+      z-index: 10;
+    }
+
+    #header {
+      margin-top: 4rem;
+      height: 67vh;
+    }
+
+    #about .wedding-wire img {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 375px) and (min-height: 812px) {
+    .nav-links {
+      height: 105vh;
+    }
+
+    .nav-links.open {
+      clip-path: circle(950px at 90% 0%);
+      -webkit-clip-path: circle(950px at 90% 0%);
+      z-index: 10;
+    }
+
+    #header {
+      margin-top: 4rem;
+      height: 67vh;
+    }
+
+    #header {
+      margin-top: 4rem;
+      height: 60vh;
+    }
+
+    #header .video-sign img {
+      height: 16vh;
+    }
+
+    #about {
+      padding: 1rem 0;
+    }
+  }
+
+  /* ======================= FAQ'S WEB PAGE ============================*/
+
+  @media (max-width: 320px) {
+    #faq-body {
+      height: 110rem;
+    }
+
+    #faq-body .container #event-sign {
+      width: 100%;
+      background: url(../img/any-event_sign.png) center fixed;
+      /* width: 50%; */
+      position: relative;
+    }
+
+    #faq-body .container #event-sign .booth-event-list {
+      width: 16rem;
+    }
+
+    .nav-links {
+      height: 109vh;
+    }
+  }
+
+  /* ====================  PRICE-LIST ================ */
+
+  @media (max-width: 500px) {
+    /* .nav-links {
+      height: 106vh;
+    } */
+
+    #firefly-pricing {
+      margin-top: 4rem;
+    }
+
+    #firefly-pricing .container .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #mini-pricing {
+      margin-top: -4rem;
+    }
+
+    #mini-pricing .container .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #additional-options {
+      margin-top: -4rem;
+    }
+
+    #additional-options .container .items .item:nth-child(3) img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #snapchat-filters {
+      margin-top: -8rem;
+    }
+
+    #snapchat-filters .container .items .item:nth-child(1) img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    #firefly-pricing {
+      margin-top: 2rem;
+    }
+
+    #firefly-pricing .container .items .item-image img {
+      width: 300px;
+      padding: 1rem;
+    }
+
+    #mini-pricing .container .items .item-image img {
+      width: 300px;
+      padding: 1rem;
+    }
+
+    #additional-options .container .items img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #snapchat-filters {
+      margin-top: -7rem;
+    }
+
+    #snapchat-filters .container .items .item img {
+      width: 100%;
+    }
+  }
+
+  /* ====================  CONTACT US ================ */
+
+  @media (max-width: 768px) {
+    #question {
+      margin-top: 4rem;
+    }
+
+    #question .container .box:first-child {
+      margin-top: -3rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #question {
+      margin-top: 6rem;
+    }
+
+    #question .container {
+      margin-top: -2rem;
+    }
+
+    #question .container .box:first-child {
+      margin-top: 0rem;
+      margin-bottom: 4rem;
+    }
+
+    #question .container .box:last-child {
+      padding: 1rem;
+    }
+
+    #question .container .box h4 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    #question .container .box p {
+      font-size: 1rem;
+    }
+
+    #question .container .box:first-child {
+      padding: 1rem;
+    }
+
+    #contact .contact-form {
+      padding: 3rem 2.5rem;
+    }
+
+    #contact .contact-form input[type="radio"] {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Iphone 5/SE */
+
+    @media (max-width: 320px) {
+      #navbar-top .email a {
+        font-size: 1rem;
+      }
+
+      .nav-links {
+        height: 122vh;
+      }
+
+      #navbar-top i {
+        margin: 0 1rem;
+        font-size: 2rem;
+      }
+
+      #header {
+        margin-top: 3.5rem;
+        height: 64vh;
+      }
+
+      /* Navbar Links */
+
+      .nav-links {
+        margin-top: -13rem;
+      }
+
+      .nav-links.open {
+        clip-path: circle(700px at 90% 0%);
+        -webkit-clip-path: circle(700px at 90% 0%);
+        z-index: 10;
+      }
+    }
+
+    @media (max-width: 280px) {
+      .nav-links {
+        height: 110vh;
+      }
+
+      .nav-links.open {
+        clip-path: circle(700px at 90% 0%);
+        -webkit-clip-path: circle(750px at 90% 0%);
+        z-index: 10;
+      }
+
+      #header {
+        height: 55vh;
+      }
+    }
+
+    /* =============PROPS =================== */
+
+    #props {
+      margin-top: 3rem;
+    }
+  }
+
+  /* Footer (Bottom) */
+
+  #main-footer .container {
+    display: flex;
     flex-direction: column;
-    text-align: center;
   }
 
-  #about .wedding-wire div {
-    margin-bottom: 2rem;
+  #main-footer .container p {
+    order: 2;
   }
 
-  /* Background Options */
-
-  #background-options {
-    padding-top: 2rem;
-    height: 100%;
+  #main-footer .container h4 a {
+    color: white;
   }
-
-  /* Booth List */
-
-  #booth-list .items .item:nth-child(3) img {
-    width: 90%;
-    height: 90%;
-    margin: 0rem;
-  }
-}
-
-@media (max-width: 411px) {
-  .nav-links.open {
-    clip-path: circle(950px at 90% 0%);
-    -webkit-clip-path: circle(950px at 90% 0%);
-    z-index: 10;
-  }
-
-  #about .wedding-wire img {
-    margin-bottom: 0rem;
-  }
-}
-
-@media (max-width: 400px) {
-  #header {
-    height: 63vh;
-  }
-}
-
-/* ============= Iphone 6/7/8 =========  */
-
-@media (max-width: 375px) {
-  .nav-links.open {
-    clip-path: circle(900px at 90% 0%);
-    -webkit-clip-path: circle(900px at 90% 0%);
-    z-index: 10;
-  }
-
-  #header {
-    margin-top: 4rem;
-    height: 67vh;
-  }
-
-  #about .wedding-wire img {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 375px) and (min-height: 812px) {
-  .nav-links {
-    height: 105vh;
-  }
-
-  .nav-links.open {
-    clip-path: circle(950px at 90% 0%);
-    -webkit-clip-path: circle(950px at 90% 0%);
-    z-index: 10;
-  }
-
-  #header {
-    margin-top: 4rem;
-    height: 67vh;
-  }
-
-  #header {
-    margin-top: 4rem;
-    height: 60vh;
-  }
-
-  #header .video-sign img {
-    height: 16vh;
-  }
-
-  #about {
-    padding: 1rem 0;
-  }
-}
-
-/* Iphone 5/SE */
-
-@media (max-width: 320px) {
-  #navbar-top .email a {
-    font-size: 1rem;
-  }
-
-  #navbar-top i {
-    margin: 0 1rem;
-    font-size: 2rem;
-  }
-
-  #header {
-    margin-top: 3.5rem;
-    height: 64vh;
-  }
-
-  /* Navbar Links */
-
-  .nav-links {
-    margin-top: -13rem;
-  }
-
-  .nav-links.open {
-    clip-path: circle(700px at 90% 0%);
-    -webkit-clip-path: circle(700px at 90% 0%);
-    z-index: 10;
-  }
-}
-
-/* ======================= FAQ'S WEB PAGE ============================*/
-
-@media (max-width: 500px) {
-  .nav-links {
-    height: 105vh;
-  }
-
-  #faq-body {
-    height: 97rem;
-  }
-
-  #faq-body .container {
-    height: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-  #faq-body {
-    height: 110rem;
-  }
-
-  #faq-body .container #event-sign {
-    width: 100%;
-    background: url(../img/any-event_sign.png) center fixed;
-    /* width: 50%; */
-    position: relative;
-  }
-
-  #faq-body .container #event-sign .booth-event-list {
-    width: 16rem;
-  }
-
-  .nav-links {
-    height: 109vh;
-  }
-}
-
-/* ====================  PRICE-LIST ================ */
-
-@media (max-width: 500px) {
-  .nav-links {
-    height: 106vh;
-  }
-
-  #firefly-pricing {
-    margin-top: 4rem;
-  }
-
-  #firefly-pricing .container .items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #mini-pricing {
-    margin-top: -4rem;
-  }
-
-  #mini-pricing .container .items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #additional-options {
-    margin-top: -4rem;
-  }
-
-  #additional-options .container .items .item:nth-child(3) img {
-    width: 100%;
-    height: 100%;
-  }
-
-  #snapchat-filters {
-    margin-top: -8rem;
-  }
-
-  #snapchat-filters .container .items .item:nth-child(1) img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-  #firefly-pricing {
-    margin-top: 2rem;
-  }
-
-  #firefly-pricing .container .items .item-image img {
-    width: 300px;
-    padding: 1rem;
-  }
-
-  #mini-pricing .container .items .item-image img {
-    width: 300px;
-    padding: 1rem;
-  }
-
-  #additional-options .container .items img {
-    height: 100%;
-    width: 100%;
-  }
-
-  #snapchat-filters {
-    margin-top: -7rem;
-  }
-
-  #snapchat-filters .container .items .item img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 280px) {
-  .nav-links {
-    height: 110vh;
-  }
-
-  .nav-links.open {
-    clip-path: circle(700px at 90% 0%);
-    -webkit-clip-path: circle(750px at 90% 0%);
-    z-index: 10;
-  }
-
-  #header {
-    height: 55vh;
-  }
-}
-
-/* ====================  CONTACT US ================ */
-
-@media (max-width: 768px) {
-  #question {
-    margin-top: 4rem;
-  }
-
-  #question .container .box:first-child {
-    margin-top: -3rem;
-  }
-}
-
-@media (max-width: 500px) {
-  #question {
-    margin-top: 6rem;
-  }
-
-  #question .container {
-    margin-top: -2rem;
-  }
-
-  #question .container .box:first-child {
-    margin-top: 0rem;
-    margin-bottom: 4rem;
-  }
-
-  #question .container .box:last-child {
-    padding: 1rem;
-  }
-
-  #question .container .box h4 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-
-  #question .container .box p {
-    font-size: 1rem;
-  }
-
-  #question .container .box:first-child {
-    padding: 1rem;
-  }
-
-  #contact .contact-form {
-    padding: 3rem 2.5rem;
-  }
-
-  #contact .contact-form input[type="radio"] {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* =============PROPS =================== */
-
-  #props {
-    margin-top: 3rem;
-  }
-}
-
-/* Footer (Bottom) */
-
-#main-footer .container {
-  display: flex;
-  flex-direction: column;
-}
-
-#main-footer .container p {
-  order: 2;
-}
-
-#main-footer .container h4 a {
-  color: white;
 }
