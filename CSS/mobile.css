@@ -1,0 +1,650 @@
+/* =========== IPAD 768 WIDTH =========== */
+
+/* =========== Home Page ============ */
+
+/* Navbar Top */
+
+#navbar-top {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  color: black;
+  z-index: 1;
+  padding: 0.75rem;
+  align-items: center;
+  flex-direction: column;
+  height: 10rem;
+}
+
+#navbar-top .email a {
+  font-size: 25px;
+}
+
+/* Social Icons */
+
+#navbar-top .social-icons {
+  margin-top: 0.5rem;
+}
+
+/* Navbar Menu */
+.nav-links {
+  margin-top: -11.5rem;
+}
+
+/* ================ Navbar Menu =============== */
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 11;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+}
+
+nav {
+  position: relative;
+  /* z-index: 19; */
+}
+
+.nav-links {
+  /* margin-top: -10.5rem; */
+  position: fixed;
+  background: #3c0215;
+  height: 103vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(100px at 90% -10%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+  z-index: 10;
+  padding: 3rem 0;
+}
+
+.nav-links.open {
+  clip-path: circle(1300px at 90% 0%);
+  -webkit-clip-path: circle(1300px at 90% 0%);
+  pointer-events: all;
+  z-index: 10;
+}
+
+.nav-links li {
+  opacity: 0;
+}
+.nav-links li a {
+  font-size: 25px;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4) {
+  transition: all 0.5s ease 0.8s;
+}
+.nav-links li:nth-child(5) {
+  transition: all 0.5s ease 0.1s;
+}
+.nav-links li:nth-child(6) {
+  transition: all 0.5s ease 0.12s;
+}
+li.fade {
+  opacity: 1;
+}
+
+/* Navbar Menu End */
+
+/* Header Image */
+
+#header {
+  background: #333 url(../img/ipad-header-image_05.jpg) no-repeat center
+    center/cover;
+  height: 78vh;
+  width: 100%;
+  color: white;
+  margin-top: 6rem;
+  position: relative;
+}
+
+#header .video-sign {
+  position: absolute;
+  bottom: -1.9rem;
+  right: 30%;
+}
+
+#header .video-sign img {
+  height: 20vh;
+}
+
+/* Background Options List */
+
+#background-options {
+  padding-top: 3rem;
+  height: 100%;
+  width: 100%;
+  background: url(../img/ipad_list-options-background_04.jpg) center no-repeat;
+}
+
+/* #background-options .container  {
+		margin-top: 10rem;
+	} */
+
+#background-options .items {
+  display: block;
+  padding: 1rem;
+}
+
+#background-options .items .item {
+  display: flex;
+  text-align: left;
+}
+
+#background-options .items .item img {
+  width: 35%;
+  height: 35%;
+  margin-right: 1.3rem;
+}
+
+/* Booth List */
+
+#booth-list .items {
+  display: block;
+  padding: 1rem;
+}
+
+#booth-list .items .item {
+  display: flex;
+  flex-direction: column;
+}
+
+#booth-list .items .item img {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+/* =============== PRICE LIST - START ============== */
+
+#firefly-pricing .container .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#mini-pricing .container .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#additional-options .container .items {
+  display: flex;
+  flex-direction: column;
+}
+
+#additional-options .container .items .item:nth-child(3) img {
+  width: 50%;
+}
+
+#snapchat-filters .container .items {
+  display: flex;
+  flex-direction: column;
+}
+
+#snapchat-filters .container .items .item:nth-child(2) {
+  margin-right: 0;
+}
+
+/* Wedding Wire */
+
+#about .wedding-wire {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#about .wedding-wire img {
+  margin-bottom: 2rem;
+}
+
+#background-options {
+  height: 100%;
+}
+
+/* Booth List */
+
+#booth-list .items .item:nth-child(3) img {
+  width: 95%;
+  height: 95%;
+}
+
+/*  =========== BACKDROPS =========== */
+
+#backdrops {
+  margin-top: 5rem;
+}
+
+/* =================== IPAD END ======================== */
+
+/* =================== Mobile ======================== */
+
+@media (max-width: 500px) {
+  #navbar-top .social-contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    padding: 6rem 0;
+  }
+
+  /* Navbar-Menu */
+
+  .nav-links.open {
+    clip-path: circle(880px at 90% 0%);
+    -webkit-clip-path: circle(880px at 90% 0%);
+    z-index: 10;
+  }
+
+  /* Header Image */
+
+  #header {
+    background: #333
+      url(../img/photo-booth-dallas-tx-mobile-header-image_05.jpg) no-repeat
+      center center/cover;
+    height: 72vh;
+    width: 100%;
+    color: white;
+    margin-top: 6rem;
+    position: relative;
+  }
+
+  /* Background Options */
+
+  #background-options {
+    padding-top: 3rem;
+    width: 100%;
+    background: url(../img/ipad_list-options-background_04.jpg) center;
+    height: 100%;
+  }
+
+  #background-options .items {
+    padding: 1rem;
+  }
+
+  #background-options .items .item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #background-options .items .item img {
+    width: 75%;
+    margin-right: 0;
+    align-self: center;
+  }
+}
+
+/* =========== iphone 6/7 Plus ========== */
+
+@media (max-width: 414px) {
+  .nav-links {
+    margin-top: -12.5rem;
+  }
+
+  #navbar-top {
+    font-size: 1.2rem;
+  }
+
+  #navbar-top .email a {
+    font-size: 1.2rem;
+  }
+
+  .nav-links.open {
+    clip-path: circle(900px at 90% 0%);
+    -webkit-clip-path: circle(900px at 90% 0%);
+    z-index: 10;
+  }
+
+  #header {
+    margin-top: 4.5rem;
+    height: 71vh;
+  }
+
+  /* Wedding wire */
+
+  #about .wedding-wire {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about .wedding-wire div {
+    margin-bottom: 2rem;
+  }
+
+  /* Background Options */
+
+  #background-options {
+    padding-top: 2rem;
+    height: 100%;
+  }
+
+  /* Booth List */
+
+  #booth-list .items .item:nth-child(3) img {
+    width: 90%;
+    height: 90%;
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 411px) {
+  .nav-links.open {
+    clip-path: circle(950px at 90% 0%);
+    -webkit-clip-path: circle(950px at 90% 0%);
+    z-index: 10;
+  }
+
+  #about .wedding-wire img {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #header {
+    height: 63vh;
+  }
+}
+
+/* ============= Iphone 6/7/8 =========  */
+
+@media (max-width: 375px) {
+  .nav-links.open {
+    clip-path: circle(900px at 90% 0%);
+    -webkit-clip-path: circle(900px at 90% 0%);
+    z-index: 10;
+  }
+
+  #header {
+    margin-top: 4rem;
+    height: 67vh;
+  }
+
+  #about .wedding-wire img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) and (min-height: 812px) {
+  .nav-links {
+    height: 105vh;
+  }
+
+  .nav-links.open {
+    clip-path: circle(950px at 90% 0%);
+    -webkit-clip-path: circle(950px at 90% 0%);
+    z-index: 10;
+  }
+
+  #header {
+    margin-top: 4rem;
+    height: 67vh;
+  }
+
+  #header {
+    margin-top: 4rem;
+    height: 60vh;
+  }
+
+  #header .video-sign img {
+    height: 16vh;
+  }
+
+  #about {
+    padding: 1rem 0;
+  }
+}
+
+/* Iphone 5/SE */
+
+@media (max-width: 320px) {
+  #navbar-top .email a {
+    font-size: 1rem;
+  }
+
+  #navbar-top i {
+    margin: 0 1rem;
+    font-size: 2rem;
+  }
+
+  #header {
+    margin-top: 3.5rem;
+    height: 64vh;
+  }
+
+  /* Navbar Links */
+
+  .nav-links {
+    margin-top: -13rem;
+  }
+
+  .nav-links.open {
+    clip-path: circle(700px at 90% 0%);
+    -webkit-clip-path: circle(700px at 90% 0%);
+    z-index: 10;
+  }
+}
+
+/* ======================= FAQ'S WEB PAGE ============================*/
+
+@media (max-width: 500px) {
+  .nav-links {
+    height: 105vh;
+  }
+
+  #faq-body {
+    height: 97rem;
+  }
+
+  #faq-body .container {
+    height: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  #faq-body {
+    height: 110rem;
+  }
+
+  #faq-body .container #event-sign {
+    width: 100%;
+    background: url(../img/any-event_sign.png) center fixed;
+    /* width: 50%; */
+    position: relative;
+  }
+
+  #faq-body .container #event-sign .booth-event-list {
+    width: 16rem;
+  }
+
+  .nav-links {
+    height: 109vh;
+  }
+}
+
+/* ====================  PRICE-LIST ================ */
+
+@media (max-width: 500px) {
+  .nav-links {
+    height: 106vh;
+  }
+
+  #firefly-pricing {
+    margin-top: 4rem;
+  }
+
+  #firefly-pricing .container .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #mini-pricing {
+    margin-top: -4rem;
+  }
+
+  #mini-pricing .container .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #additional-options {
+    margin-top: -4rem;
+  }
+
+  #additional-options .container .items .item:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #snapchat-filters {
+    margin-top: -8rem;
+  }
+
+  #snapchat-filters .container .items .item:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  #firefly-pricing {
+    margin-top: 2rem;
+  }
+
+  #firefly-pricing .container .items .item-image img {
+    width: 300px;
+    padding: 1rem;
+  }
+
+  #mini-pricing .container .items .item-image img {
+    width: 300px;
+    padding: 1rem;
+  }
+
+  #additional-options .container .items img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #snapchat-filters {
+    margin-top: -7rem;
+  }
+
+  #snapchat-filters .container .items .item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  .nav-links {
+    height: 110vh;
+  }
+
+  .nav-links.open {
+    clip-path: circle(700px at 90% 0%);
+    -webkit-clip-path: circle(750px at 90% 0%);
+    z-index: 10;
+  }
+
+  #header {
+    height: 55vh;
+  }
+}
+
+/* ====================  CONTACT US ================ */
+
+@media (max-width: 768px) {
+  #question {
+    margin-top: 4rem;
+  }
+
+  #question .container .box:first-child {
+    margin-top: -3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #question {
+    margin-top: 6rem;
+  }
+
+  #question .container {
+    margin-top: -2rem;
+  }
+
+  #question .container .box:first-child {
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+
+  #question .container .box:last-child {
+    padding: 1rem;
+  }
+
+  #question .container .box h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  #question .container .box p {
+    font-size: 1rem;
+  }
+
+  #question .container .box:first-child {
+    padding: 1rem;
+  }
+
+  #contact .contact-form {
+    padding: 3rem 2.5rem;
+  }
+
+  #contact .contact-form input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* =============PROPS =================== */
+
+  #props {
+    margin-top: 3rem;
+  }
+}
+
+/* Footer (Bottom) */
+
+#main-footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-footer .container p {
+  order: 2;
+}
+
+#main-footer .container h4 a {
+  color: white;
+}
